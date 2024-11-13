@@ -1,0 +1,382 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0px;
+    min-height: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(51, 51, 51);
+
+}
+img{
+    max-width: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 25%;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+    gap: 0px;
+}
+.cap{
+    font-family: Montserrat, sans-serif;
+    color: rgb(159, 163, 167);
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 25px;
+}
+.word{
+    font-weight: bold;
+    margin: 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    color: #9fa3a7;
+}
+h3{
+    font-weight: normal;
+    line-height: 32px;
+    font-size: 30px;
+    margin: 25px;
+    font-family: "Arvo";
+}
+.blok1{
+    grid-area: 1 / 1 / 2 / 3;
+    display: flex;
+    padding-right: 4%;
+    padding-left: 4%;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.blok2{
+    grid-area: 1 / 3 / 2 / 5;
+    display: flex;
+    flex-direction: column;
+    padding-right: 4%;
+    padding-left: 4%;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #f7eff0;
+}
+.blok2 a{
+    color: rgb(39, 185, 194);
+    text-decoration: underline;
+}
+h2{
+    font-size: 46px;
+    line-height: 60px;
+    text-align: center;
+    font-family: "Arvo";
+    font-weight: 400;
+}
+.blok3{
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    padding-right: 4%;
+    padding-left: 4%;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f05638;
+    text-align: center;
+}
+.blok3 .word2{
+    color: white;
+    font-family: "Arvo";
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+}
+.blok3 a{
+    color: #ffc80a;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "arvo";
+    letter-spacing: 3px;
+}
+.blok4{
+    grid-area: 2 / 2 / 3 / 4;
+    display: flex;
+    padding-right: 4%;
+    padding-left: 4%;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #f7eff0;
+    overflow: hidden;
+}
+.blok4 .inside-blok4-1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+.blok4 .caps{
+    font-family: "Montserrat";
+    color: rgb(159, 163, 167);
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.blok4 .inside-blok4-2{
+    width: 40%;
+}
+.blok4 .inside-blok4-2 a{
+    color: rgb(39, 185, 194);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.blok4 .inside-blok4-2 p{
+    color: rgb(159, 163, 167);
+    line-height: 26px;
+}
+.blok5{
+    overflow: hidden;
+    grid-area: 2 / 4 / 4 / 5;
+    display: flex;
+    padding-right: 4%;
+    padding-left: 4%;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(143, 118, 188);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.blok5 .word4{
+    padding-left: 30px;
+    color: white;
+    font-family: "Arvo";
+    border-radius: 60px;
+    background-color: rgba(255, 255, 255, 0.08);
+    background-image: url(5bc2f42d5a5ed9663e707e7d_Shape.png);
+    background-position: 11px 50%;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    font-size: 10px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+.blok5 .circle{
+    overflow: hidden;
+    display: flex;
+    width: 373px;
+    height: 373px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(129, 102, 176);
+    
+}
+.blok5 h3{
+    font-weight: bold;
+}
+.blok5 img{
+    width: 250px;
+    height: 250px;
+}
+.blok5 p{
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: white;
+    font-family: "Arvo";
+}
+.blok5 .word5{
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: normal;
+}
+.blok5 a{
+    padding: 15px;
+    color: black;
+    margin-top: 20px;
+    border: #ffc80a solid;
+    background-color: #ffc80a;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 3px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.blok6{
+    grid-area: 3 / 1 / 4 / 2;
+    display: flex;
+    padding-right: 4%;
+    padding-left: 4%;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #f7eff0;
+    flex-direction: column;
+    text-align: center;
+}
+.blok6 img{
+    position: relative;
+    right: 28px;
+}
+.blok6 h3{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    color: rgb(0, 0, 0);
+    font-family: "Arvo";
+}
+.blok6 a{
+    color: rgb(39, 185, 194);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.blok7{
+    grid-area: 3 / 2 / 4 / 4;
+    display: flex;
+    padding-right: 4%;
+    padding-left: 4%;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    flex-direction: column;
+    background-color: #9db3b4;
+    color: white;
+    overflow: hidden;
+}
+.blok7 .div{
+    background-image: url(5bc2f42d5a5ed97dab707e7e_UX.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    right: 25px;
+    top:10px;
+}
+.blok7 .pp{
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 7px;
+    font-weight: normal;
+    align-self: baseline;
+    border: solid #f96d56;
+    background-color: #f96d56;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    
+}
+.blok8{
+    grid-area: 4 / 1 / 5 / 2;
+    background-color: #4bcfeb;
+    display: flex;
+    padding-right: 4%;
+    padding-left: 4%;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+}
+.blok8 .circle2{
+    overflow: hidden;
+    display: flex;
+    width: 260px;
+    height: 350px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:#48cae5;
+}
+.blok8 .circle2 img{
+    width: 55px;
+}
+.blok9{
+    grid-area: 4 / 2 / 5 / 3;
+    background-color: #f7eff0;
+    display: flex;
+    padding-right: 4%;
+    padding-left: 4%;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+}
+.blok9 p{
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: #87c02f;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #f7eff0;
+    font-size: 8px;
+    margin-top: 18px;
+}
+.blok9 h3{
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: normal;
+    letter-spacing: 2.5px;
+    color: rgb(0, 0, 0);
+    font-family: "Arvo";
+}
+.blok10{
+    grid-area: 4 / 3 / 5 / 5;
+    display: flex;
+    overflow: hidden;
+    padding-right: 5%;
+    padding-left: 5%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 255, 255);
+    width:100%;
+}
+.blok10 img{
+    width: 50%;
+    position: relative;
+    right:25px;
+}
+.blok10 h3{
+    width: 35%;
+    font-size: 25px;
+}
